@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D299146B7A849DBB078E8C6 /* libPods-WeatherUndergroundTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A74BD22FE94504A2286D26 /* libPods-WeatherUndergroundTests.a */; };
+		50A2E602C25340C9ACBBAACC /* libPods-WeatherUnderground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9CBCBD2C02462194899092 /* libPods-WeatherUnderground.a */; };
 		B8A34FE91901710F001E6EB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A34FE81901710F001E6EB9 /* Foundation.framework */; };
 		B8A34FEB1901710F001E6EB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A34FEA1901710F001E6EB9 /* CoreGraphics.framework */; };
 		B8A34FED1901710F001E6EB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A34FEC1901710F001E6EB9 /* UIKit.framework */; };
@@ -18,7 +20,10 @@
 		B8A350031901710F001E6EB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A34FE81901710F001E6EB9 /* Foundation.framework */; };
 		B8A350041901710F001E6EB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A34FEC1901710F001E6EB9 /* UIKit.framework */; };
 		B8A3500C1901710F001E6EB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8A3500A1901710F001E6EB9 /* InfoPlist.strings */; };
-		B8A3500E1901710F001E6EB9 /* WeatherUndergroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A3500D1901710F001E6EB9 /* WeatherUndergroundTests.m */; };
+		B8DEC1F619017755008ECD0E /* WUAPIClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DEC1F519017755008ECD0E /* WUAPIClientSpec.m */; };
+		B8DEC1F9190178F1008ECD0E /* WUAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DEC1F8190178F1008ECD0E /* WUAPIClient.m */; };
+		B8DEC1FC19017B2F008ECD0E /* WULocationManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DEC1FB19017B2F008ECD0E /* WULocationManagerSpec.m */; };
+		B8DEC20219017C37008ECD0E /* WULocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DEC20119017C37008ECD0E /* WULocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C9CBCBD2C02462194899092 /* libPods-WeatherUnderground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherUnderground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F472A10567430AA82A14FC /* Pods-WeatherUnderground.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherUnderground.xcconfig"; path = "Pods/Pods-WeatherUnderground.xcconfig"; sourceTree = "<group>"; };
+		88A74BD22FE94504A2286D26 /* libPods-WeatherUndergroundTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherUndergroundTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A084A1825D45470F8BC1855C /* Pods-WeatherUndergroundTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherUndergroundTests.xcconfig"; path = "Pods/Pods-WeatherUndergroundTests.xcconfig"; sourceTree = "<group>"; };
 		B8A34FE51901710F001E6EB9 /* WeatherUnderground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherUnderground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A34FE81901710F001E6EB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B8A34FEA1901710F001E6EB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,7 +56,12 @@
 		B8A350011901710F001E6EB9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B8A350091901710F001E6EB9 /* WeatherUndergroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeatherUndergroundTests-Info.plist"; sourceTree = "<group>"; };
 		B8A3500B1901710F001E6EB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B8A3500D1901710F001E6EB9 /* WeatherUndergroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherUndergroundTests.m; sourceTree = "<group>"; };
+		B8DEC1F519017755008ECD0E /* WUAPIClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WUAPIClientSpec.m; sourceTree = "<group>"; };
+		B8DEC1F7190178F1008ECD0E /* WUAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WUAPIClient.h; sourceTree = "<group>"; };
+		B8DEC1F8190178F1008ECD0E /* WUAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WUAPIClient.m; sourceTree = "<group>"; };
+		B8DEC1FB19017B2F008ECD0E /* WULocationManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WULocationManagerSpec.m; sourceTree = "<group>"; };
+		B8DEC20019017C37008ECD0E /* WULocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WULocationManager.h; sourceTree = "<group>"; };
+		B8DEC20119017C37008ECD0E /* WULocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WULocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 				B8A34FEB1901710F001E6EB9 /* CoreGraphics.framework in Frameworks */,
 				B8A34FED1901710F001E6EB9 /* UIKit.framework in Frameworks */,
 				B8A34FE91901710F001E6EB9 /* Foundation.framework in Frameworks */,
+				50A2E602C25340C9ACBBAACC /* libPods-WeatherUnderground.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +83,7 @@
 				B8A350021901710F001E6EB9 /* XCTest.framework in Frameworks */,
 				B8A350041901710F001E6EB9 /* UIKit.framework in Frameworks */,
 				B8A350031901710F001E6EB9 /* Foundation.framework in Frameworks */,
+				3D299146B7A849DBB078E8C6 /* libPods-WeatherUndergroundTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,8 @@
 				B8A350071901710F001E6EB9 /* WeatherUndergroundTests */,
 				B8A34FE71901710F001E6EB9 /* Frameworks */,
 				B8A34FE61901710F001E6EB9 /* Products */,
+				A084A1825D45470F8BC1855C /* Pods-WeatherUndergroundTests.xcconfig */,
+				68F472A10567430AA82A14FC /* Pods-WeatherUnderground.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +118,8 @@
 				B8A34FEA1901710F001E6EB9 /* CoreGraphics.framework */,
 				B8A34FEC1901710F001E6EB9 /* UIKit.framework */,
 				B8A350011901710F001E6EB9 /* XCTest.framework */,
+				88A74BD22FE94504A2286D26 /* libPods-WeatherUndergroundTests.a */,
+				3C9CBCBD2C02462194899092 /* libPods-WeatherUnderground.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,7 +130,11 @@
 				B8A34FF71901710F001E6EB9 /* WUAppDelegate.h */,
 				B8A34FF81901710F001E6EB9 /* WUAppDelegate.m */,
 				B8A34FFA1901710F001E6EB9 /* Images.xcassets */,
+				B8DEC1F7190178F1008ECD0E /* WUAPIClient.h */,
+				B8DEC1F8190178F1008ECD0E /* WUAPIClient.m */,
 				B8A34FEF1901710F001E6EB9 /* Supporting Files */,
+				B8DEC20019017C37008ECD0E /* WULocationManager.h */,
+				B8DEC20119017C37008ECD0E /* WULocationManager.m */,
 			);
 			path = WeatherUnderground;
 			sourceTree = "<group>";
@@ -129,8 +153,9 @@
 		B8A350071901710F001E6EB9 /* WeatherUndergroundTests */ = {
 			isa = PBXGroup;
 			children = (
-				B8A3500D1901710F001E6EB9 /* WeatherUndergroundTests.m */,
 				B8A350081901710F001E6EB9 /* Supporting Files */,
+				B8DEC1F519017755008ECD0E /* WUAPIClientSpec.m */,
+				B8DEC1FB19017B2F008ECD0E /* WULocationManagerSpec.m */,
 			);
 			path = WeatherUndergroundTests;
 			sourceTree = "<group>";
@@ -151,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8A350111901710F001E6EB9 /* Build configuration list for PBXNativeTarget "WeatherUnderground" */;
 			buildPhases = (
+				A5D22545F3CC4AF899BB8A9A /* Check Pods Manifest.lock */,
 				B8A34FE11901710F001E6EB9 /* Sources */,
 				B8A34FE21901710F001E6EB9 /* Frameworks */,
 				B8A34FE31901710F001E6EB9 /* Resources */,
+				E4ADB7DD09A74C51A5B19935 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8A350141901710F001E6EB9 /* Build configuration list for PBXNativeTarget "WeatherUndergroundTests" */;
 			buildPhases = (
+				5FE899B642654A4FB5846206 /* Check Pods Manifest.lock */,
 				B8A34FFC1901710F001E6EB9 /* Sources */,
 				B8A34FFD1901710F001E6EB9 /* Frameworks */,
 				B8A34FFE1901710F001E6EB9 /* Resources */,
+				92DB6F1021E6443AA17340C0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,12 +264,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FE899B642654A4FB5846206 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92DB6F1021E6443AA17340C0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-WeatherUndergroundTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5D22545F3CC4AF899BB8A9A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4ADB7DD09A74C51A5B19935 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-WeatherUnderground-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B8A34FE11901710F001E6EB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B8A34FF91901710F001E6EB9 /* WUAppDelegate.m in Sources */,
+				B8DEC1F9190178F1008ECD0E /* WUAPIClient.m in Sources */,
+				B8DEC20219017C37008ECD0E /* WULocationManager.m in Sources */,
 				B8A34FF51901710F001E6EB9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +343,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8A3500E1901710F001E6EB9 /* WeatherUndergroundTests.m in Sources */,
+				B8DEC1F619017755008ECD0E /* WUAPIClientSpec.m in Sources */,
+				B8DEC1FC19017B2F008ECD0E /* WULocationManagerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +450,7 @@
 		};
 		B8A350121901710F001E6EB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68F472A10567430AA82A14FC /* Pods-WeatherUnderground.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -368,6 +464,7 @@
 		};
 		B8A350131901710F001E6EB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68F472A10567430AA82A14FC /* Pods-WeatherUnderground.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -381,6 +478,7 @@
 		};
 		B8A350151901710F001E6EB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A084A1825D45470F8BC1855C /* Pods-WeatherUndergroundTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WeatherUnderground.app/WeatherUnderground";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -403,6 +501,7 @@
 		};
 		B8A350161901710F001E6EB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A084A1825D45470F8BC1855C /* Pods-WeatherUndergroundTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WeatherUnderground.app/WeatherUnderground";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -438,6 +537,7 @@
 				B8A350131901710F001E6EB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8A350141901710F001E6EB9 /* Build configuration list for PBXNativeTarget "WeatherUndergroundTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +546,7 @@
 				B8A350161901710F001E6EB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
