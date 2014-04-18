@@ -13,4 +13,6 @@
 
 - (CLLocation *)currentLocation;
 
+- (void) getCurrentLocationWithCompletion:(void (^)(CLLocation *currentLocation))completion;
+
 @end

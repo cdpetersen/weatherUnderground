@@ -8,10 +8,17 @@
 
 #import "WULocationManager.h"
 
+
 @implementation WULocationManager
 
 - (CLLocation *)currentLocation {
     return [[CLLocation alloc] init];
+}
+
+- (void) getCurrentLocationWithCompletion:(void (^)(CLLocation *))completion {
+    if (completion) {
+        completion([self currentLocation]);
+    }
 }
 
 @end

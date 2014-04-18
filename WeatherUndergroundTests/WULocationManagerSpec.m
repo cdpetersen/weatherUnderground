@@ -29,16 +29,36 @@ describe(@"WULocationManager", ^{
         expect(manager).to.respondTo(@selector(currentLocation));
     });
     
-    it(@"has a CLLocationManager property", ^{
-        expect(manager.locationManager).to.beKindOf([CLLocationManager class]   );
-    });
-    
     context(@"current location", ^{
         it(@"returns a location", ^{
             CLLocation *location = [manager currentLocation];
-            expect(location).to.beKindOf([CLLocation class]);
+                expect(location).to.beKindOf([CLLocation class]);
+        });
+
+        xit(@"returns actual coordinates", ^{
+            CLLocation *loc = [manager currentLocation];
+            expect(loc.coordinate.latitude).toNot.equal(0);
+            expect(loc.coordinate.longitude).toNot.equal(0);
         });
         
+    });
+    
+    context(@"getCurrentLocationWithCompletion:", ^{
+        it(@"fetches a location", ^{
+            expect(manager).to.respondTo(@selector(getCurrentLocationWithCompletion:));
+        });
+        
+        it(@"calls completion block", ^{
+            __block CLLocation *location;
+            void (^completion)(CLLocation *) = ^void(CLLocation *currentLocation){
+                location = currentLocation;
+            };
+            [manager getCurrentLocationWithCompletion:completion];
+            expect(location).toNot.beNil();
+        });
+        xit(@"returns a location", ^{
+        
+        });
     });
 });
 
