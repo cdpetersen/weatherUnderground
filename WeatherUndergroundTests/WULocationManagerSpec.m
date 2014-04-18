@@ -11,6 +11,11 @@
 #import <Expecta/Expecta.h>
 #import "WULocationManager.h"
 
+@interface WULocationManager ()
+@property (nonatomic, strong) CLLocationManager *locationManager;
+
+@end
+
 SpecBegin(WULocationManagerSpec)
 
 describe(@"WULocationManager", ^{
@@ -48,7 +53,7 @@ describe(@"WULocationManager", ^{
             expect(manager).to.respondTo(@selector(getCurrentLocationWithCompletion:));
         });
         
-        it(@"calls completion block", ^{
+        it(@"calls completion block and returns a location", ^{
             __block CLLocation *location;
             void (^completion)(CLLocation *) = ^void(CLLocation *currentLocation){
                 location = currentLocation;
@@ -56,8 +61,15 @@ describe(@"WULocationManager", ^{
             [manager getCurrentLocationWithCompletion:completion];
             expect(location).toNot.beNil();
         });
-        xit(@"returns a location", ^{
         
+        it(@"calls startUpdatingLocations on locationManager", ^{
+            
+        });
+        
+    });
+    context(@"CLLocationManager", ^{
+        it(@"has a location manager", ^{
+            expect(manager.locationManager).toNot.beNil();
         });
     });
 });

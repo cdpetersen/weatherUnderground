@@ -10,4 +10,8 @@
 
 @interface WUAPIClient : NSObject
 
+- (void)weatherForState:(NSString *)state
+                   city:(NSString *)city
+             completion:(void (^)(NSDictionary *))completion;
 @end
+
